@@ -1,0 +1,53 @@
+﻿<Window x:Class="pracwpf1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pracwpf1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock TextWrapping="Wrap"/>
+        <Border x:Name="game_desk" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="360" Margin="150,37,0,0" VerticalAlignment="Center" Width="360" Visibility="Hidden">
+            <StackPanel Margin="0">
+                <Button x:Name="button1" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="0,0,0,0" Click="button1_Click">
+                    <Image x:Name="image1" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button2" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="0,0,0,0" Click="button2_Click">
+                    <Image x:Name="image2" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button3" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="0,0,0,0" Click="button3_Click">
+                    <Image x:Name="image3" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button4" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="120,-120,0,0" Click="button4_Click">
+                    <Image x:Name="image4" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button5" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="120,-240,0,0" Click="button5_Click">
+                    <Image x:Name="image5" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button6" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="120,-360,0,0" Click="button6_Click">
+                    <Image x:Name="image6" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button7" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="240,-120,0,0" Click="button7_Click">
+                    <Image x:Name="image7" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button8" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="240,-240,0,0" Click="button8_Click">
+                    <Image x:Name="image8" Height="120" Width="120"/>
+                </Button>
+                <Button x:Name="button9" HorizontalAlignment="Left" Height="120" VerticalAlignment="Top" Width="120" Margin="240,-360,0,0" Click="button9_Click">
+                    <Image x:Name="image9" Height="120" Width="120"/>
+                </Button>
+            </StackPanel>
+        </Border>
+        <RadioButton x:Name="chose_noliki" Content="Нолики" HorizontalAlignment="Left" Height="47" Margin="84,226,0,0" VerticalAlignment="Top" Width="155" GroupName="chosing_side" FontFamily="Arial Black" Checked="chose_noliki_Checked"/>
+        <RadioButton x:Name="chose_krestiki" Content="Крестики" HorizontalAlignment="Left" Height="47" Margin="84,152,0,0" VerticalAlignment="Top" Width="133" GroupName="chosing_side" FontFamily="Arial Black" Checked="chose_krestiki_Checked"/>
+        <Label x:Name="chose" Content="Выберите, за кого будете играть" HorizontalAlignment="Left" Height="69" Margin="68,44,0,0" VerticalAlignment="Top" Width="232" FontFamily="Arial Black"/>
+        <Label x:Name="finish" Content="" HorizontalAlignment="Left" Height="347" Margin="20,36,0,0" VerticalAlignment="Top" Width="753" FontFamily="Arial Black" FontSize="20" Visibility="Hidden"/>
+        <Button x:Name="restart" Content="Играть еще раз" HorizontalAlignment="Center" Height="78" Margin="0,227,0,0" VerticalAlignment="Top" Width="236" FontFamily="Arial Black" FontSize="20" Visibility="Hidden" Click="restart_Click"/>
+        <Button x:Name="logout" Content="Выйти" HorizontalAlignment="Center" Height="78" Margin="0,320,0,0" VerticalAlignment="Top" Width="236" FontFamily="Arial Black" FontSize="20" Visibility="Hidden" Click="logout_Click"/>
+        <Label x:Name="wins_loses" Content="" HorizontalAlignment="Left" Height="95" Margin="55,273,0,0" VerticalAlignment="Top" Width="153" FontFamily="Arial Black" FontSize="20"/>
+    </Grid>
+</Window>
+
+
+   

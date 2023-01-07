@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="png-clipart-circle-area-angle-circle-red-s-text-circle.png" />
+    <None Remove="Без названия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="png-clipart-circle-area-angle-circle-red-s-text-circle.png" />
+    <Resource Include="Без названия.png" />
+  </ItemGroup>
+
+</Project>
